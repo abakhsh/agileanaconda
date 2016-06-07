@@ -12,21 +12,15 @@
 		AEA0F3B61D07093F0028AC51 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA0F3B41D07093F0028AC51 /* Main.storyboard */; };
 		AEA0F3B81D07093F0028AC51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA0F3B71D07093F0028AC51 /* Assets.xcassets */; };
 		AEA0F3BB1D07093F0028AC51 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA0F3B91D07093F0028AC51 /* LaunchScreen.storyboard */; };
-		AEA0F3C61D0709400028AC51 /* agileanacondaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3C51D0709400028AC51 /* agileanacondaTests.swift */; };
-		AEA0F3D11D0709400028AC51 /* agileanacondaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3D01D0709400028AC51 /* agileanacondaUITests.swift */; };
+		AEA0F3C61D0709400028AC51 /* AppDelegateSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0F3C51D0709400028AC51 /* AppDelegateSpec.swift */; };
 		AEA0F3E81D07110D0028AC51 /* Nimble.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEA0F3E31D0710250028AC51 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEA0F3EA1D07110D0028AC51 /* Quick.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEA0F3E41D0710250028AC51 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEA0F3EE1D07130C0028AC51 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA0F3E31D0710250028AC51 /* Nimble.framework */; };
+		AEA0F3EF1D07130C0028AC51 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA0F3E41D0710250028AC51 /* Quick.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		AEA0F3C21D0709400028AC51 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AEA0F3A51D07093F0028AC51 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = AEA0F3AC1D07093F0028AC51;
-			remoteInfo = agileanaconda;
-		};
-		AEA0F3CD1D0709400028AC51 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = AEA0F3A51D07093F0028AC51 /* Project object */;
 			proxyType = 1;
@@ -59,11 +53,8 @@
 		AEA0F3BA1D07093F0028AC51 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA0F3BC1D07093F0028AC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEA0F3C11D0709400028AC51 /* agileanacondaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = agileanacondaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEA0F3C51D0709400028AC51 /* agileanacondaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agileanacondaTests.swift; sourceTree = "<group>"; };
+		AEA0F3C51D0709400028AC51 /* AppDelegateSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateSpec.swift; sourceTree = "<group>"; };
 		AEA0F3C71D0709400028AC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEA0F3CC1D0709400028AC51 /* agileanacondaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = agileanacondaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		AEA0F3D01D0709400028AC51 /* agileanacondaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = agileanacondaUITests.swift; sourceTree = "<group>"; };
-		AEA0F3D21D0709400028AC51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEA0F3E31D0710250028AC51 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		AEA0F3E41D0710250028AC51 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,13 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEA0F3C91D0709400028AC51 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				AEA0F3EE1D07130C0028AC51 /* Nimble.framework in Frameworks */,
+				AEA0F3EF1D07130C0028AC51 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +86,6 @@
 				AEA0F3E41D0710250028AC51 /* Quick.framework */,
 				AEA0F3AF1D07093F0028AC51 /* agileanaconda */,
 				AEA0F3C41D0709400028AC51 /* agileanacondaTests */,
-				AEA0F3CF1D0709400028AC51 /* agileanacondaUITests */,
 				AEA0F3AE1D07093F0028AC51 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -110,7 +95,6 @@
 			children = (
 				AEA0F3AD1D07093F0028AC51 /* agileanaconda.app */,
 				AEA0F3C11D0709400028AC51 /* agileanacondaTests.xctest */,
-				AEA0F3CC1D0709400028AC51 /* agileanacondaUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -131,19 +115,10 @@
 		AEA0F3C41D0709400028AC51 /* agileanacondaTests */ = {
 			isa = PBXGroup;
 			children = (
-				AEA0F3C51D0709400028AC51 /* agileanacondaTests.swift */,
+				AEA0F3C51D0709400028AC51 /* AppDelegateSpec.swift */,
 				AEA0F3C71D0709400028AC51 /* Info.plist */,
 			);
 			path = agileanacondaTests;
-			sourceTree = "<group>";
-		};
-		AEA0F3CF1D0709400028AC51 /* agileanacondaUITests */ = {
-			isa = PBXGroup;
-			children = (
-				AEA0F3D01D0709400028AC51 /* agileanacondaUITests.swift */,
-				AEA0F3D21D0709400028AC51 /* Info.plist */,
-			);
-			path = agileanacondaUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,24 +161,6 @@
 			productReference = AEA0F3C11D0709400028AC51 /* agileanacondaTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		AEA0F3CB1D0709400028AC51 /* agileanacondaUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AEA0F3DB1D0709400028AC51 /* Build configuration list for PBXNativeTarget "agileanacondaUITests" */;
-			buildPhases = (
-				AEA0F3C81D0709400028AC51 /* Sources */,
-				AEA0F3C91D0709400028AC51 /* Frameworks */,
-				AEA0F3CA1D0709400028AC51 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AEA0F3CE1D0709400028AC51 /* PBXTargetDependency */,
-			);
-			name = agileanacondaUITests;
-			productName = agileanacondaUITests;
-			productReference = AEA0F3CC1D0709400028AC51 /* agileanacondaUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -218,10 +175,6 @@
 						CreatedOnToolsVersion = 7.3.1;
 					};
 					AEA0F3C01D0709400028AC51 = {
-						CreatedOnToolsVersion = 7.3.1;
-						TestTargetID = AEA0F3AC1D07093F0028AC51;
-					};
-					AEA0F3CB1D0709400028AC51 = {
 						CreatedOnToolsVersion = 7.3.1;
 						TestTargetID = AEA0F3AC1D07093F0028AC51;
 					};
@@ -242,7 +195,6 @@
 			targets = (
 				AEA0F3AC1D07093F0028AC51 /* agileanaconda */,
 				AEA0F3C01D0709400028AC51 /* agileanacondaTests */,
-				AEA0F3CB1D0709400028AC51 /* agileanacondaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -259,13 +211,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AEA0F3BF1D0709400028AC51 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEA0F3CA1D0709400028AC51 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -306,15 +251,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEA0F3C61D0709400028AC51 /* agileanacondaTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AEA0F3C81D0709400028AC51 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AEA0F3D11D0709400028AC51 /* agileanacondaUITests.swift in Sources */,
+				AEA0F3C61D0709400028AC51 /* AppDelegateSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,11 +262,6 @@
 			isa = PBXTargetDependency;
 			target = AEA0F3AC1D07093F0028AC51 /* agileanaconda */;
 			targetProxy = AEA0F3C21D0709400028AC51 /* PBXContainerItemProxy */;
-		};
-		AEA0F3CE1D0709400028AC51 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = AEA0F3AC1D07093F0028AC51 /* agileanaconda */;
-			targetProxy = AEA0F3CD1D0709400028AC51 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -472,6 +404,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = agileanacondaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.agileanacondaTests;
@@ -484,33 +420,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = agileanacondaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.agileanacondaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/agileanaconda.app/agileanaconda";
-			};
-			name = Release;
-		};
-		AEA0F3DC1D0709400028AC51 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = agileanacondaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.agileanacondaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = agileanaconda;
-			};
-			name = Debug;
-		};
-		AEA0F3DD1D0709400028AC51 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				INFOPLIST_FILE = agileanacondaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.pivotal.agileanacondaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = agileanaconda;
 			};
 			name = Release;
 		};
@@ -540,15 +458,6 @@
 			buildConfigurations = (
 				AEA0F3D91D0709400028AC51 /* Debug */,
 				AEA0F3DA1D0709400028AC51 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		AEA0F3DB1D0709400028AC51 /* Build configuration list for PBXNativeTarget "agileanacondaUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				AEA0F3DC1D0709400028AC51 /* Debug */,
-				AEA0F3DD1D0709400028AC51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
